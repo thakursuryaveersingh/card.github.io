@@ -1,0 +1,102 @@
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="step step-0">
+  <h1>27 Card Trick</h1>
+  <p>Hello stranger. In this pen I wanna show you a pretty cool magic trick. It's a mathematical card trick.</p>
+  <p>Follow the steps as instructed. You'll be impressed.</p>
+  <br />
+  <p>Please give me your favorite number between 1 and 27 (you should remember it till the end):</p>
+  <p><input class="fav_number_range" type="range" min="1" value="1" max="27" /></p>
+  <p class="fav_number">1</p>
+  <button>Start the trick!</button>
+</div>
+<div class="step step-1">
+  <h1>Step 1</h1>
+  <p>In this step you need to choose one of these 27 cards. You can choose by clicking on the card. Please make sure to remember this card! Your card will not be saved. If you don't trust me look at the javascript.</p>
+  <div class="cards">
+    <div class="card black">A&spades;</div>
+    <div class="card red">A&hearts;</div>
+    <div class="card black">A&clubs;</div>
+    <div class="card red">A&diams;</div>
+    <div class="card black">2&spades;</div>
+    <div class="card red">2&hearts;</div>
+    <div class="card black">2&clubs;</div>
+    <div class="card red">2&diams;</div>
+    <div class="card black">3&spades;</div>
+    <div class="card red">3&hearts;</div>
+    <div class="card black">3&clubs;</div>
+    <div class="card red">3&diams;</div>
+    <div class="card black">4&spades;</div>
+    <div class="card red">4&hearts;</div>
+    <div class="card black">4&clubs;</div>
+    <div class="card red">4&diams;</div>
+    <div class="card black">5&spades;</div>
+    <div class="card red">5&hearts;</div>
+    <div class="card black">5&clubs;</div>
+    <div class="card red">5&diams;</div>
+    <div class="card black">6&spades;</div>
+    <div class="card red">6&hearts;</div>
+    <div class="card black">6&clubs;</div>
+    <div class="card red">6&diams;</div>
+    <div class="card black">7&spades;</div>
+    <div class="card red">7&hearts;</div>
+    <div class="card black">7&clubs;</div>
+    <br style="clear: both;" />
+  </div>
+</div>
+<div class="step step-2">
+  <h1>Step 2</h1>
+  <p>This step is the same as the following steps 3 and 4. The cards are randomly shuffled by the javascript. There are now 3 rows of cards. Each pile has 9 cards. There's also a button right next to each pile. Please look for your card and click on the button right next to that pile. DON'T cheat, otherwise the trick won't work.</p>
+  <div class="pile pile-1">
+    <button data-pile="0">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+  <div class="pile pile-2">
+    <button data-pile="1">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+  <div class="pile pile-3">
+    <button data-pile="2">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+</div>
+<div class="step step-3">
+  <h1>Step 3</h1>
+  <p>This step is the same as the steps 2 and 4. There are now 3 rows of cards. Each pile has 9 cards. There's also a button right next to each pile. Please look for your card and click on the button right next to that pile. DON'T cheat, otherwise the trick won't work.</p>
+  <div class="pile pile-1">
+    <button data-pile="0">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+  <div class="pile pile-2">
+    <button data-pile="1">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+  <div class="pile pile-3">
+    <button data-pile="2">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+</div>
+<div class="step step-4">
+  <h1>Step 4</h1>
+  <p>This step is the same as the steps 2 and 3. There are now 3 rows of cards. Each pile has 9 cards. There's also a button right next to each pile. Please look for your card and click on the button right next to that pile. DON'T cheat, otherwise the trick won't work.</p>
+  <div class="pile pile-1">
+    <button data-pile="0">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+  <div class="pile pile-2">
+    <button data-pile="1">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+  <div class="pile pile-3">
+    <button data-pile="2">In this pile</button>
+    <br style="clear: both;" />
+  </div>
+</div>
+<div class="step step-5">
+  <h1>Step 5</h1>
+  <p>After 3 rounds of dealing out the cards into 3 piles the order of the cards has changed. If we hold the deck of cards face down and start dealing out the cards to reveal them we will count each card, starting with 1. What was your favorite number again? <span class="your_number"></span>? Have a look at the card of your favorite number. Is that your card?</p>
+  <p>There is no trick like saving your choice at the beginning. It's a mathemtical card trick.</p>
+  <div id="final_cards"></div>
+</div>
+<script  src="jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>

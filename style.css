@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #333;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  float: left;
+  margin-top: 30px;
+  margin-right: 15px;
+}
+
+.step {
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+.step:nth-child(odd) {
+  background: #333;
+  color: #ffffff;
+}
+.step:nth-child(odd) button {
+  background-color: aquamarine;
+  color: #333;
+}
+.step:nth-child(even) {
+  background: aquamarine;
+  color: #333;
+}
+.step:nth-child(even) button {
+  background-color: #333;
+  color: #ffffff;
+}
+.step.step-0 {
+  display: block;
+}
+.step.step-0 button {
+  float: none;
+  margin: 0;
+}
+
+.pile {
+  max-width: 50%;
+  margin: 20px auto;
+}
+
+.cards {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.card {
+  font-size: 20px;
+  font-weight: bold;
+  background: snow;
+  cursor: pointer;
+  width: 50px;
+  height: 75px;
+  border-radius: 10px;
+  margin: 5px;
+  float: left;
+  text-align: center;
+  line-height: 75px;
+  box-shadow: 2px 2px 1px #666, inset 2px 2px 1px #aaa;
+}
+.card.red {
+  color: #ff0000;
+}
+.card.black {
+  color: #000000;
+}
+
+#final_cards {
+  width: 100px;
+  margin: 0 auto;
+}
+#final_cards div {
+  width: 50px;
+  display: inline-block;
+  line-height: 75px;
+  text-align: center;
+  margin: 0px 0px 5px 0px;
+}
+#final_cards div:nth-child(1) {
+  color: #333;
+  font-size: 20px;
+}
+
+.your_number {
+  color: #f00;
+  font-weight: bold;
+}
